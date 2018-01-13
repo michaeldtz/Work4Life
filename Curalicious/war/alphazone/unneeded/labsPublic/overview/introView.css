@@ -1,0 +1,81 @@
+#titleImg{
+	padding-top:5px;
+	text-align: center;
+	position: absolute;
+	bottom: 70px;
+	left: 330px;
+	
+}
+
+#slideshow{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#lecturePager{
+	margin-top:30px;
+}
+
+.pageWindow{
+	height: 300px;
+	width: 100%;
+	background-color: #707070;
+}
+
+.subtitle{
+	
+	font-weight: normal;
+	color:black ;	
+}
+
+.flexslider li p{
+	margin: 5px;
+	font-size: 14px;
+}
+
+.flexslider .flex-control-nav{
+	bottom: -25px;
+}
+
+#introFold {
+	/*padding-top: 20px;*/ 
+	height : 570px;
+	width: 100%;
+	background: #c3d9ff; /* Old browsers */
+	background: -moz-linear-gradient(top, #c3d9ff 0%, #e5e5e5 0%, #cccccc 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c3d9ff),
+		color-stop(0%, #e5e5e5), color-stop(100%, #cccccc) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c3d9ff 0%, #e5e5e5 0%, #cccccc 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c3d9ff 0%, #e5e5e5 0%, #cccccc 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c3d9ff 0%, #e5e5e5 0%, #cccccc 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #c3d9ff 0%, #e5e5e5 0%, #cccccc 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#c3d9ff',
+		endColorstr='#cccccc', GradientType=0 );
+	
+}
+
+
+.foldShadow {
+	height: 10px;
+	background-color: steelblue;
+}
+
+#examplesArrow{
+position: absolute;
+left: 740px;
+width: 190px;
+top: 330px;
+}
+
+
+#examplesArrow > div{
+	padding-left: 80px;
+text-align: center;
+font-size: 13px
+}

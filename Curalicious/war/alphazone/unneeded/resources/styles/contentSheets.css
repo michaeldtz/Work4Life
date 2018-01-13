@@ -1,0 +1,17 @@
+div.contentSheetCentered{
+	padding-top:20px;
+	width: 800px;
+	margin: 0px auto;
+}
+
+div.contentSheetBigCentered{
+	padding-top:20px;
+	width: 1200px;
+	margin: 0px auto;
+}
+
+
+div.contentSheet{
+	padding-top:20px;
+	width: 100%;
+}

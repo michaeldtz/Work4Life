@@ -1,0 +1,39 @@
+<div id="login_partial" ng-controller="login.controller">
+	<link rel="stylesheet" href="css/login.css">
+	
+	<div class="centeredcontent" id="login">
+		<div id="logintitle" class="headlinefont">
+			<span id="logo">
+				<span id="logo_work">Work</span><span id="logo_4">&</span><span id="logo_life">Life</span>
+			</span>
+			<!-- <strong>Log In</strong>-->
+
+		</div>
+		
+		<div ng-hide="sessionActive">
+			<div id="status">{{errormessage}}</div>
+			
+			<form>
+			<input class="loginInp blackinput {{errorclass}} {{errorclass_username}}" name="emailAdress"
+				ng-model="j_username" placeholder="Email Address">
+				
+				<br /> <input
+				class="loginInp blackinput {{errorclass}} {{errorclass_password}}" name="password" type="password"
+				ng-model="j_password" placeholder="Password">
+			
+			<button id="loginBtn" class="bluebutton" ng-click="login()">
+				Log In <i class="icon ion-chevron-right"></i>
+			</button>
+			</form>
+			<div class="hint">You don't have an account? <a href="register.html">Sign Up Here</a></div>
+		</div>
+		
+		<div ng-show="sessionActive">
+			<div id="status">Hi {{activeUsername}}. You're logged in.</div>
+			<button id="loginBtn" class="bluebutton" ng-click="logout()">
+				Log Out <i class="icon ion-chevron-right"></i>
+			</button>
+		</div>
+	</div>
+
+</div>

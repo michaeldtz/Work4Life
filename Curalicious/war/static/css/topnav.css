@@ -1,0 +1,102 @@
+#topnav {
+	background-color: white;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-color: #eeeeee;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1200;
+	height: 56px;
+	top: 0px;
+}
+
+#menubtn{
+	display: block;
+	float: left;	
+	
+	margin-right: 12px;
+	margin-top: 7px;
+	margin-left: 2px;
+	
+}
+
+.icon-bg {
+	background-color: #EEEEEE;
+	display: block;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	line-height: 40px;
+	font-size: 17px;
+	text-align: center;
+}
+
+#headericon{
+	display: block;
+	float: left;
+	margin-top: 9px;
+	font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+}
+
+#logo_work{
+	color: rgb(55,55,55);
+}
+
+#logo_4{
+	color: steelblue;
+}
+
+#logo_life{
+	color: rgb(55,55,55);
+}
+
+#slogan{
+	color: black;
+	display: block; 
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#profileicon{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	color: black;
+	
+}
+
+#profileicon{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	color: black;
+	
+}
+
+#profileicon #usersname{
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+#profileicon:hover #usersname{
+	font-weight: 300;
+}
+
+#profileicon:hover .icon-bg{
+	background-color: steelblue;
+}
+
+#profileicon span{
+	float: left;
+}
+
+#profileicon #loginlink{
+	float: left;
+	margin-right: 2px;
+	padding-top: 10px;
+}

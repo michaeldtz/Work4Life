@@ -1,0 +1,36 @@
+#loginForm {
+	/*position: absolute;
+	width: 300px;
+	height: 250px;
+	*/
+	text-align: center;
+	padding-top: 15px;
+	}
+
+
+#loginForm .header{
+	margin-top: 20px;
+}
+
+#loginInfoText{
+	margin-top: 20px;
+	width: 100%;
+}
+
+#openIDProviderSelect{
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+	padding:0px;
+	text-align: center;;
+	height: 40px;
+}
+
+
+#loginButton{
+	margin-top: 5px;
+	width: 260px;
+}
+
+

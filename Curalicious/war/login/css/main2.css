@@ -1,0 +1,77 @@
+body {
+	background: #f5f5f5;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: rgb(255, 255, 255);
+}
+
+#topnav {
+	background-color: white;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-color: #eeeeee;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1200;
+	height: 56px;
+	top: 0px;
+}
+
+#menubtn{
+	display: block;
+	float: left;	
+	
+	margin-right: 18px;
+	margin-top: 7px;
+	margin-left: 2px;
+	
+}
+
+.icon-bg {
+	background-color: #fafafa;
+	display: block;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	line-height: 40px;
+	font-size: 17px;
+	text-align: center;
+}
+
+#headericon{
+	display: block;
+	float: left;
+	margin-top: 17px;
+	font-family: 'Bad Script', cursive;
+	font-size: 20px;
+}
+
+#logo_work{
+	color: rgb(55,55,55);
+}
+
+#logo_4{
+	color: steelblue;
+}
+
+#logo_life{
+	color: rgb(55,55,55);
+}
+
+#slogan{
+	color: black;
+	display: block; 
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#sidebar{
+	background-color: #263238;
+	width: 256px;
+	overflow: hidden;
+	min-height: 56px;
+}

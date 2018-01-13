@@ -1,0 +1,29 @@
+<div ng-controller="topnav.controller">
+	<header id="topnav">
+		<a id="menubtn" ng-click="toggleMenu()"> 
+		<span class="icon-bg">
+			<button type="button" id="menubtn-ham" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+		<!--  <i
+				class="fa fa-bars"></i> -->
+		</span>
+		</a>
+		
+            
+		<div id="headericon">
+			<span id="logo_work">Curalicious</span><span id="logo_4"></span>
+			<span>{{subareaname}}</span>
+		</div>
+		<!-- <div id="slogan">{{slogan}}</div>  -->
+		
+		<div id="profileicon"> 
+			<a id="loginlink" href="/login/login.html{{redirectAfterLogin}}" ng-show="showLogin">Log In</a>
+			<span id="usersname">{{firstname}} {{lastname}}</span>
+			<span class="icon-bg" ng-click="gotoLogin()"><i class="fa fa-user"></i></span>			
+		</div>
+		
+	</header>
+</div>

@@ -1,0 +1,22 @@
+#logoutView {
+	/*position: absolute;
+	width: 300px;
+	height: 250px;*/
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+#loginForm.header{
+	margin-top: 20px;
+}
+
+#loginInfoText{
+	margin-top: 20px;
+	width: 100%;
+}
+
+#logoutButton{
+	margin-top: 30px;
+	width: 260px;
+}

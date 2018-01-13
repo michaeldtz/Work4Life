@@ -1,0 +1,108 @@
+
+
+#login{
+	background-color: rgb(50,60,60);
+	width: 400px;
+	
+	padding: 30px;
+	border-top: 3px solid rgb(110,186,255);
+}
+
+#login.register{
+	width: 600px;	
+}
+
+#login * {
+	
+	width: 98%;
+	margin-top: 10px;
+}
+
+#login.register input {
+	
+	width: 49%;
+	
+	margin-top: 10px;
+}
+
+
+#logintitle{
+	text-align: center;
+	font-size: 35px;
+}
+
+#betahint{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+.centeredcontent{
+	margin: 0 auto;
+	margin-top: 10%;
+	
+	
+}
+
+.headlinefont{
+	font-family: 'Bad Script', cursive;
+}
+
+.hint{
+	color: rgba(255,255,255,0.6);
+	font-size: 12px;
+	text-align: center;
+}
+
+.blackinput {
+	
+	background-color: rgb(25,34,40);
+	color: white;
+	
+	border: none;
+	border-radius: 3px;
+	
+	padding: 3px;
+	text-indent: 5px;
+	font-size: 20px;
+}
+
+
+
+.blackinput.error{
+	background-color: rgb(100,34,40);
+}
+
+.blackinput.warn{
+	background-color: rgb(102,102,0);
+}
+
+.bluebutton {
+	
+	background-color: rgb(110,186,255);
+	border: none;
+	border-radius: 2px;
+	
+}
+
+#loginBtn{
+	padding: 7px;
+}
+
+#logo_work{
+	color: rgb(200,200,200);
+}
+
+#logo_4{
+	color: rgb(020,232,120);
+}
+
+#logo_life{
+	color: rgb(200,200,200);
+}
+
+#status{
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+}

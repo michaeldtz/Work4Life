@@ -1,0 +1,60 @@
+
+#repositoryProjectsListArea {
+	
+	position: relative;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 70%;
+	width: 50%;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.list {
+	margin-top: 10px;
+	padding-top: 0px;
+	padding-left: 20px;
+	height: 100%;
+	width: 90%;
+}
+
+.list>li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+	font-size: 0.9em;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+	width: 90%;
+}
+
+.list>li:hover {
+	color: steelblue;
+} 
+
+.list>li.selected {
+	color: steelblue;
+	border-bottom-color: steelblue;
+}
+
+.listSearch {
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+.listSearch>input {
+	width: 100%;
+}
+
+.listDelButton {
+	position: absolute;
+	right: 0px;
+	top: 5px;
+	background-color: black;
+	padding: 5px;
+}
+
+.listDelButton:hover{
+	background-color: rgb(70,70,70);
+}
+

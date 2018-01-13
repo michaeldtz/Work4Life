@@ -1,0 +1,13 @@
+
+.sectionContent {
+	border: 2px solid rgb(70, 70, 70);
+}
+
+.sectionHeader {
+	width: 100%;
+	background-color: rgb(70, 70, 70);
+	color: white;
+	padding: 5px;
+	box-sizing: border-box;
+	border: none;
+}

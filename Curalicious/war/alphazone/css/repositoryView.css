@@ -1,0 +1,81 @@
+#repositoryView {
+	overflow: hidden;
+	padding: 0px;
+}
+
+#repoTitle {
+	margin-bottom: 20px;
+}
+
+#repositoryContentListArea {
+	float: left;
+	position: relative;
+	padding: 10px;
+	padding-top: 30px;
+	margin-left: 0px;
+	height: 100%;
+	width: 300px;
+	box-sizing: border-box;
+}
+
+
+#repositoryContentEditorArea {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 900px;
+
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#repositoryContentListArea .ui-list-control{
+	height: 75%;
+	overflow-x: auto;
+	overflow-y: none;
+}
+
+
+#repositoryContentEditor {
+	width: 100%;
+	height: 300px;
+	resize: vertical;
+}
+
+.sectionContent {
+	border: 2px solid rgb(70, 70, 70);
+}
+
+#contentEditorContainer {
+	background-color: white;
+}
+
+#dropzone{
+	width: 225px;
+	height: 50px;
+	
+	position: absolute;
+	bottom: 10px;
+}
+
+.projectEntry{
+	margin-top: 30px;
+	margin-left: 5px;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+	width: 90%;
+	font-size: 1em;
+	
+}
+
+.projectEntry:hover{
+	color: steelBlue;
+}
+
+.projectEntry + .ui-control > .ui-list-control{
+	margin-top: 0px;
+}
+
+.projectEntry > img {
+	margin-right: 5px;
+	
+}

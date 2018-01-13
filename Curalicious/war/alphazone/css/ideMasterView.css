@@ -1,0 +1,138 @@
+
+
+#ideContentList{
+	width: 19%;
+	height: 100%;
+	border-right: 1px solid rgba(20,20,20,0.3);
+	float: left;
+	padding-left: 10px;
+}
+
+
+#ideContentEditor{
+	
+	width: 79%;
+	height: 100%;
+	float: left;
+		
+}
+
+#ideToolbar{
+	width: 100%;
+	height: 30px;
+	
+	background-color: rgba(20,20,150,0.2);
+	margin-left: 3px;
+	border: 1px solid #AAA;
+}
+
+#ideTabbar{
+	width: 100%;
+	height: 30px;
+	
+	background-color: rgba(150,20,150,0.2);
+	margin-left: 3px;
+	border: 1px solid #AAA;
+}
+
+
+#ideCode{
+	height: 85%;
+	width: 100%;
+	margin-left: 3px;
+	border: 1px solid #AAA;
+}
+
+.ideCodeTab{
+	float: left;
+	height: 100%;
+	line-height: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+	text-align: center;
+	background-color: white;
+	border-right: 1px solid black;
+	
+	-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: moz-none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.ideCodeTab:hover{
+	background-color: #FFD;
+}
+
+.ideCodeTab.active{
+	background-color: #BAF300;
+}
+
+.ideCodeTab.unsaved{
+	background-color: #FF8900;
+}
+
+.ideToolbarBtn{
+	background-color: #222;
+	border: 1px solid steelblue;
+	color: #EEE;
+	width: 100px;
+	height: 25px;
+	margin: 2px;
+}
+
+.ideToolbarBtn:hover{
+	background-color: #555;
+}
+
+.ideCodeArea{
+	height: 100%;
+	width: 100%;
+}
+
+.previewFrame{
+	border:none;
+	background-color:white;
+}
+
+.ui-list-control{
+	height: 90%;
+}
+
+.projectEntry{
+	margin: 10px;
+	font-size: 19px;
+}
+
+.projectEntry:hover{
+	color: steelblue;
+}
+
+.projectEntry > img{
+	margin-right: 10px;
+}
+
+#dropZone{
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	line-height: 100px;
+	text-align: center;
+	
+	font-size: 40px;
+	
+	background-color: steelblue;
+	
+	display: none;
+	z-index: 20;
+	
+}
+
+#dropZone.dropping{
+	display: block;
+}

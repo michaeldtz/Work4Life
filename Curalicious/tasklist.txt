@@ -1,0 +1,20 @@
+Dashboard
+	Tiles
+
+Sidepanel
+	Topic
+	
+Alphazone
+	IDE
+	Git Integration
+
+Company Admin
+	Users
+	Roles
+	
+
+Admin Area
+	Initialization
+	Users
+	Companies
+	Email Management

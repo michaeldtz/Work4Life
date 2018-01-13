@@ -1,0 +1,72 @@
+<div id="register_partial" ng-controller="register.controller">
+	<link rel="stylesheet" href="css/login.css">
+
+	<div class="centeredcontent register" id="login">
+		<div id="logintitle" class="headlinefont">
+			<span id="logo"> <span id="logo_work">Work</span><span
+				id="logo_4">&</span><span id="logo_life">Life</span>
+			</span>
+			<!-- <strong>Log In</strong>-->
+
+		</div>
+
+		<div id="registrationView" ng-show="showLogin">
+			<div id="status">{{errormessage}}</div>
+			
+			<form>
+			
+			 <input
+				class="loginInp blackinput {{errorclass}} {{errorclass_emailAdress}}"
+				name="emailAdress" ng-model="emailAdress" ng-blur="checkEmail()"
+				placeholder="Email Address">
+				<span>{{errormessage_emailAdress}}</span>
+<br/>
+			<input
+				class="loginInp blackinput {{errorclass}} {{errorclass_prename}}"
+				name="prename" type="text" ng-model="prename" placeholder="First Name">
+
+			<input
+				class="loginInp blackinput {{errorclass}} {{errorclass_surname}}"
+				name="surname" type="text" ng-model="surname" placeholder="Last Name">
+
+			<br /> <br /> 
+				
+				<!-- <input
+				class="loginInp blackinput {{errorclass}} {{errorclass_emailAdressConfirm}}"
+				name="emailAdressConfirm" ng-model="emailAdressConfirm"
+				placeholder="Confirm Email Address"> <br /> 
+				 -->
+				 
+				<input
+				class="loginInp blackinput {{errorclass}} {{errorclass_password}}"
+				name="password" type="password" ng-model="password"
+				placeholder="Password"> <input
+				class="loginInp blackinput {{errorclass}} {{errorclass_password}} {{errorclass_passwordConfirm}}"
+				name="passwordConfirm" type="password" ng-model="passwordConfirm"
+				placeholder="Repeat Password"> <br /> <br /> <input
+				type="checkbox"
+				class="loginInp blackinput {{errorclass}} {{errorclass_termsAndCond}}"
+				style="width: 20px;" name="termsAndCond" ng-model="termsAndCond" />
+			<span>Please confirm that you have read and agree to our <a
+				href="">terms and conditions</a></span>
+
+			<button id="loginBtn" class="bluebutton" ng-click="register()">
+				Register <i class="icon ion-chevron-right"></i>
+			</button>
+			
+			</form>
+
+
+			<div class="hint">
+				You already have an account? <a href="login.html">Log In Here</a>
+			</div>
+		</div>
+		<div id="successView" ng-show="showSuccess">
+			<div id="status">Registration successful</div>
+			<button id="loginBtn" class="bluebutton" ng-click="loginnow()">
+				Log In Now <i class="icon ion-chevron-right"></i>
+		</button>
+		</div>
+	</div>
+
+</div>

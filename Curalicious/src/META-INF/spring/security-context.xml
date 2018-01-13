@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns:b="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/security"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/security
+                           http://www.springframework.org/schema/security/spring-security-3.2.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="de.dietzm" />
+
+	<global-method-security pre-post-annotations="enabled" />
+
+	<http auto-config="true" entry-point-ref="SLAuthenticationEntryPoint">
+
+		<port-mappings>
+			<port-mapping http="80" https="443" />
+		</port-mappings>
+
+		<intercept-url pattern="/rest/**/public/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+		<intercept-url pattern="/rest/**/admin/**" access="ROLE_CORE_ADMIN" />
+		<intercept-url pattern="/rest/**/user/**" access="ROLE_CORE_BASIC_USER" />
+		<intercept-url pattern="/login/**" requires-channel="https" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**"/>
+
+<!-- login-page="/login/login.html" -->
+		<form-login  login-processing-url="/loginservice"
+			  
+			 authentication-failure-url="/login/login.html?login_error=1"
+			 authentication-success-handler-ref="SLAuthenticationSuccessHandler"
+			 authentication-failure-handler-ref="SLAuthenticationFailureHandler"
+			 
+			 /> 
+		<logout logout-url="/logout" logout-success-url="/login/logout.html" /> 
+	 	<!-- <access-denied-handler error-page="/login/denied.html"/> -->
+	</http>
+
+	<b:bean id="SLAuthenticationProvider"
+		class="de.dietzm.foundation.authentication.SLAuthenticationProvider">
+	</b:bean>
+	
+	<b:bean id="SLAuthenticationEntryPoint"
+		class="de.dietzm.foundation.authentication.SLAuthenticationEntryPoint">
+	</b:bean>
+	
+
+	<authentication-manager>
+		<authentication-provider ref="SLAuthenticationProvider" />
+	</authentication-manager>
+
+
+</b:beans>

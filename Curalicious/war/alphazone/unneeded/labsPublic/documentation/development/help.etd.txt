@@ -1,0 +1,32 @@
+EnTity Definition (ETD) files contain the description of an entity. 
+
+An entity defintion contains a list of attributes and special control statements. 
+There is always one attribute or control statement per line.
+
+An attribute is a field which will be stored with the entity object.
+It has the following format "<attributeName>:<datatype> (... @<attributeControl>)"
+
+Possible basic datatypes are: INT, STRING, FLOAT, DOUBLE, USERID, TIMESTAMP
+e.g. CreatedOn:TIMESTAMP
+
+A datatype can also be another linked entity. Therefore start with # and enter the name of the linked entity.
+e.g. Owner:#Person
+
+Possible attribute control statements are: 
+@mandatory -> Field must be provided, e.g. Name:String @mandatory
+
+
+
+There are some special control statements, which allow to control the entity:
+
+@AdministrativeData 		    --> Add administrative fields like created on and changed on as well as created by and changed by
+@UserSpecific 				    --> Makes the entity user specific, which allows a user to access on his own objects
+@API:<method>(, <method> ...) 	--> Automatically adds API function which can be accessed from outside
+@ReverseEntity:#<entity>:<RefField>  --> 
+
+
+
+Planned APIs
+@Event
+@Sharable
+@Favorizable  
